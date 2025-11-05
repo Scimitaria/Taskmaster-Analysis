@@ -84,4 +84,4 @@ only <- as.numeric(is.na(data$BirthOrder) | data$BirthOrder == "")
 birthOrder <- data.frame(oldest,middle,youngest,only)
 
 
-all <- data.frame(hair,outfit,year,siblings,birthOrder,misc)
+all <- data.frame(numerics,hair,outfit,year,siblings,birthOrder,misc)
