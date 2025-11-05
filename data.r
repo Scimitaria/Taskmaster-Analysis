@@ -76,7 +76,7 @@ misc <- data.frame(notNominatedForAward,multilingual,ambidextrous,rightHanded,le
 siblings <- suppressWarnings(as.numeric(data$Siblings))
 siblings[is.na(siblings)] <- 0
 
-#BirthOrder made me bust out the alcohol
+#BirthOrder was just dumb
 oldest <- as.numeric(grepl("Oldest",data$BirthOrder))
 middle <- numericize(data$BirthOrder,"Middle")
 youngest <- as.numeric(grepl("Youngest",data$BirthOrder))

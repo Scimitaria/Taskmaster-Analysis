@@ -3,4 +3,6 @@ if(!require(coop))install.packages("coop")
 library(coop)
 source("data.r")
 
-print(cor(all,data["Place"],use="pairwise.complete.obs"))
+#TODO: filter insignificant values?, put in a scatterplot
+correlation <- (cor(year,data["Place"],use="pairwise.complete.obs"))
+print(correlation[order(abs(correlation[,"Place"])),,drop=FALSE])
